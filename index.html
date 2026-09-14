@@ -114,7 +114,8 @@ nav a:hover{color:var(--gold)}
 .inf-grid h4{margin:0 0 6px;color:#fff;font-size:1.1rem}
 .inf-grid p{margin:0;color:#ffffffd0;font-size:.95rem}
 .inf-grid .tag{margin-top:10px;color:var(--gold-l);font-weight:500}
-.hosp-msgs{max-width:760px}
+.hosp-msgs{display:grid;gap:12px;max-width:760px}
+.hosp-msgs span+span{padding-top:12px;border-top:1px solid #182c6333}
 .hospital{margin-top:28px;background:var(--gold);color:var(--navy-d);border-radius:var(--r);padding:22px 28px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;font-size:1.2rem;font-weight:700}
 
 /* location + contact */
@@ -286,6 +287,7 @@ dialog button{position:fixed;top:14px;right:18px;background:#fff;border:0;border
     <div class="hospital">
       <div class="hosp-msgs">
         <span data-en="🌎 Not from Mexico? We help you get your financing and handle all the paperwork you need.">🌎 ¿Eres extranjero? Nosotros te ayudamos a tramitar tu crédito y todos los papeles necesarios.</span>
+        <span data-en="🇺🇸 Mexican living in the United States? We'll process your bank mortgage in Mexico for you.">🇺🇸 Si eres mexicano y radicas en Estados Unidos, nosotros te tramitamos tu crédito bancario en México.</span>
       </div>
       <a class="btn btn-wa wa" href="https://wa.me/523322221912" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-en="Ask now">Pregunta ya</span></a>
     </div>
