@@ -101,11 +101,10 @@ nav a:hover{color:var(--gold)}
 /* credit */
 .credit{background:var(--navy);color:#fff}
 .credit h2{color:#fff}
-.credit-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
 .card{background:#ffffff12;border:1px solid #ffffff26;border-radius:var(--r);padding:28px}
 .card h3{margin:0 0 10px;color:var(--gold-l)}
 .card ul{margin:0;padding-left:1.1em}
-.infonavit{margin-bottom:28px}
+.schemes{margin-bottom:28px}
 .inf-head{display:flex;align-items:center;gap:16px;margin-bottom:20px}
 .inf-head h3{margin:0}
 .inf-head img{width:96px;height:auto;background:#fff;border-radius:14px;padding:10px}
@@ -141,7 +140,7 @@ dialog button{position:fixed;top:14px;right:18px;background:#fff;border:0;border
 @media (max-width:860px){
   nav{display:none}
   .lang{margin-left:auto}
-  .model,.amen-grid,.credit-grid,.contact-grid{grid-template-columns:1fr}
+  .model,.amen-grid,.contact-grid{grid-template-columns:1fr}
   .model{padding:18px}
   .model .ext{aspect-ratio:4/3}
   .photos{grid-template-columns:repeat(2,1fr)}
@@ -238,8 +237,8 @@ dialog button{position:fixed;top:14px;right:18px;background:#fff;border:0;border
 <section class="credit" id="credito">
   <div class="wrap">
     <div class="eyebrow" data-en="Financing">Financiamiento</div>
-    <h2 data-en="We handle your <em>credit</em> paperwork">Nosotros tramitamos tu <em>crédito</em></h2>
-    <div class="card infonavit">
+    <h2 data-en="Need help with your INFONAVIT, bank or FOVISSSTE credit? <em>We can help!</em>">¿Necesitas ayuda con tu crédito INFONAVIT, bancario o FOVISSSTE? <em>¡Nosotros te ayudamos!</em></h2>
+    <div class="card schemes">
       <div class="inf-head">
         <img src="img/infonavit.png" alt="Infonavit" width="96" height="70">
         <h3 data-en="Infonavit credit options">Créditos Infonavit</h3>
@@ -264,8 +263,7 @@ dialog button{position:fixed;top:14px;right:18px;background:#fff;border:0;border
         </div>
       </div>
     </div>
-    <div class="credit-grid">
-      <div class="card">
+    <div class="card schemes">
         <h3 data-en="Joint credit">Crédito conyugal</h3>
         <ul>
           <li data-en="Combine your credit with your partner or a friend">Junta tu crédito con tu pareja o un amigo</li>
@@ -273,15 +271,29 @@ dialog button{position:fixed;top:14px;right:18px;background:#fff;border:0;border
           <li data-en="Both owners have full protection and life insurance">Ambos dueños cuentan con protección y seguro de vida</li>
           <li data-en="Lower interest, lower monthly payments">Menos intereses, pagos mensuales más bajos</li>
         </ul>
+    </div>
+    <div class="card schemes">
+      <div class="inf-head">
+        <h3 data-en="FOVISSSTE credit options">Créditos FOVISSSTE</h3>
       </div>
-      <div class="card">
-        <h3>FOVISSSTE</h3>
-        <ul>
-          <li data-en="FOVISSSTE Traditional">Fovissste Tradicional</li>
-          <li data-en="FOVISSSTE Joint Credit (spouse)">Fovissste Crédito Conyugal</li>
-          <li data-en="FOVISSSTE For Everyone">Fovissste Para Todos</li>
-        </ul>
-        <p data-en="We can also process <b>INFONAVIT</b> or <b>bank</b> mortgages.">Además, si lo requieres, tramitamos créditos <b>INFONAVIT</b> o <b>bancarios</b>.</p>
+      <div class="inf-grid">
+        <div>
+          <h4 data-en="Traditional FOVISSSTE">Fovissste Tradicional</h4>
+          <p data-en="Loan 100% granted by FOVISSSTE. Payments are deducted directly from your paycheck (up to 30% of base salary) and it uses your Housing Subaccount balance.">Préstamo 100% otorgado por el FOVISSSTE. El descuento se hace directo por nómina (hasta 30% del sueldo básico) y utiliza el saldo de tu Subcuenta de Vivienda.</p>
+        </div>
+        <div>
+          <h4 data-en="FOVISSSTE for Retirees">Fovissste Pensionados</h4>
+          <p data-en="Financing designed for retirees who never used their credit. Payments are deducted directly from the pension (up to 20%).">Financiamiento diseñado para personas jubiladas que nunca ejercieron su crédito. El pago se descuenta directamente del monto de la pensión (máximo 20%).</p>
+        </div>
+        <div>
+          <h4 data-en="Joint FOVISSSTE (Spouse)">Fovissste Conyugal</h4>
+          <p data-en="Combines the worker's FOVISSSTE credit with their partner's INFONAVIT credit to significantly increase purchasing power.">Esquema que permite sumar el crédito FOVISSSTE del trabajador con el crédito INFONAVIT de su pareja para incrementar considerablemente la capacidad de compra.</p>
+        </div>
+        <div>
+          <h4 data-en="FOVISSSTE for Everyone">Fovissste Para Todos</h4>
+          <p data-en="Credit co-financed with banks. The bank lends most of the amount with fixed terms and interest in pesos, using your Housing Subaccount as the down payment.">Crédito cofinanciado con instituciones bancarias. El banco presta la mayor parte con plazos e intereses fijos en pesos, usando la Subcuenta de Vivienda como pago inicial.</p>
+          <p class="tag" data-en="Active workers seeking a much higher loan than the traditional one who can prove repayment capacity.">Trabajadores en activo que buscan un monto de crédito mucho mayor al tradicional y pueden comprobar capacidad de pago.</p>
+        </div>
       </div>
     </div>
     <div class="hospital">
