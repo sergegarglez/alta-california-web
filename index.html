@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alta California Club Residencial — Casas en venta</title>
+<meta name="description" content="Casas en Alta California Club Residencial. Modelos Santa Clara, Santa Lucía, Santa Teresa y Santa Bárbara. Hasta $200 mil de descuento por tiempo limitado.">
+<meta property="og:title" content="Alta California Club Residencial">
+<meta property="og:description" content="Donde tus sueños se hacen realidad. Hasta $200 mil de descuento.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#233f8b;--navy-d:#182c63;--gold:#a8894f;--gold-l:#d2b77e;--wa:#25d366;--wa-d:#1a9e4b;--ink:#1d2433;--muted:#5b6475;--bg:#f7f5f0;--r:22px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 "Outfit",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+h2{font-size:clamp(2rem,4vw,2.8rem);line-height:1.1;color:var(--navy);margin:0 0 .4em}
+h2 em{font-style:normal;color:var(--gold)}
+section{padding-block:80px}
+.eyebrow{color:var(--gold);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);box-shadow:0 1px 0 #0001}
+header .wrap{display:flex;align-items:center;gap:20px;height:72px}
+header .logo img{height:52px;width:auto}
+nav{display:flex;gap:22px;margin-left:auto}
+nav a{text-decoration:none;font-weight:500;color:var(--navy)}
+nav a:hover{color:var(--gold)}
+.lang{border:2px solid var(--navy);background:#fff;color:var(--navy);font:600 .9rem "Outfit",sans-serif;border-radius:99px;padding:6px 14px;cursor:pointer;display:flex;gap:6px;align-items:center}
+.lang:hover{background:var(--navy);color:#fff}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:99px;font-weight:600;text-decoration:none;transition:transform .15s,background .15s}
+.btn:active{transform:scale(.97)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-d)}
+.btn-ghost{border:2px solid #fff;color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--navy)}
+.btn svg{width:22px;height:22px;flex:none}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - 72px);display:grid;align-items:end;color:#fff;padding-block:60px;background:var(--navy-d) url(img/hero.jpg) center 30%/cover}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#182c6300 5%,#182c6399 45%,#182c63f0 85%)}
+.hero h1{text-shadow:0 2px 18px #0006}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero .family{position:absolute;z-index:1;bottom:0;right:max(20px,calc((100% - 1180px)/2));height:min(88%,760px);width:auto;filter:drop-shadow(0 20px 40px #0007)}
+@media (max-width:1024px){
+  .hero{padding-bottom:0;align-content:end}
+  .hero .family{position:relative;right:auto;height:auto;width:min(88%,440px);margin:28px auto 0}
+}
+.hero h1{margin:0;font-size:clamp(2.6rem,7vw,5rem);line-height:1;font-weight:800}
+.hero h1 span{display:block}
+.hero h1 span+span{font:400 clamp(3rem,9vw,6.5rem)/1.1 "Great Vibes",cursive;color:var(--gold-l)}
+.promo{display:inline-block;margin:24px 0;background:#fff;color:var(--navy);border-radius:var(--r);padding:14px 24px;box-shadow:0 10px 30px #0003}
+.promo small{display:block;color:var(--gold);font-weight:600;text-transform:uppercase;letter-spacing:.08em}
+.promo strong{font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.1}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px}
+
+/* video */
+.video{background:#fff}
+.video-grid{display:grid;grid-template-columns:1fr auto;gap:56px;align-items:center}
+.video p{color:var(--muted);font-size:1.15rem;max-width:34ch}
+.video video{width:min(360px,100%);aspect-ratio:9/16;border-radius:28px;background:#000;box-shadow:0 30px 60px #182c6330;margin-inline:auto}
+@media (max-width:860px){.video-grid{grid-template-columns:1fr;gap:28px}}
+
+/* models */
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 32px}
+.tabs button{font:600 1rem "Outfit",sans-serif;border:2px solid var(--navy);color:var(--navy);background:#fff;padding:10px 22px;border-radius:99px;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--navy);color:var(--gold-l)}
+.model{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;background:#fff;border-radius:28px;padding:28px;box-shadow:0 20px 50px #182c6314}
+.model .ext{border-radius:var(--r);aspect-ratio:4/5;object-fit:cover;width:100%;cursor:zoom-in}
+.model h3{font-size:2.4rem;margin:0;color:var(--navy);line-height:1.1}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 20px}
+.chip{background:var(--bg);border:1px solid #e6dfd0;border-radius:99px;padding:6px 14px;font-weight:500;font-size:.95rem}
+.chip b{color:var(--gold)}
+.floors{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.floors h4{margin:0 0 6px;color:var(--navy)}
+.floors ul{margin:0;padding-left:1.1em;color:var(--muted)}
+.thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:10px;margin:22px 0}
+.thumbs img{aspect-ratio:1;object-fit:cover;border-radius:14px;cursor:zoom-in;transition:transform .2s}
+.thumbs img:hover{transform:scale(1.04)}
+.thumbs img.plan{object-fit:contain;background:#fff;border:1px solid #eee}
+
+/* amenities */
+.amen{background:#fff}
+.amen-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:40px;align-items:start}
+.amen ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.amen li{display:flex;gap:12px;align-items:center;font-size:1.05rem}
+.amen li i{font-style:normal;width:38px;height:38px;display:grid;place-items:center;background:var(--bg);border-radius:12px}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.photos figure{margin:0;position:relative;border-radius:18px;overflow:hidden;cursor:zoom-in}
+.photos img{aspect-ratio:1;object-fit:cover;width:100%;transition:transform .3s}
+.photos figure:hover img{transform:scale(1.05)}
+.photos figcaption{position:absolute;inset:auto 0 0;padding:24px 12px 10px;color:#fff;font-weight:600;background:linear-gradient(#0000,#000a)}
+
+/* credit */
+.credit{background:var(--navy);color:#fff}
+.credit h2{color:#fff}
+.credit-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.card{background:#ffffff12;border:1px solid #ffffff26;border-radius:var(--r);padding:28px}
+.card h3{margin:0 0 10px;color:var(--gold-l)}
+.card ul{margin:0;padding-left:1.1em}
+.hospital{margin-top:28px;background:var(--gold);color:var(--navy-d);border-radius:var(--r);padding:22px 28px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;font-size:1.2rem;font-weight:700}
+
+/* location + contact */
+.contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center}
+.map{border-radius:var(--r);overflow:hidden;display:block;box-shadow:0 20px 50px #182c6320}
+.agent{background:#fff;border-radius:28px;padding:32px;box-shadow:0 20px 50px #182c6314}
+.agent h3{margin:0;font-size:1.8rem;color:var(--navy)}
+.agent p{margin:.3em 0}
+.agent .btn{width:100%;justify-content:center;margin-top:18px;font-size:1.1rem}
+footer{background:var(--navy-d);color:#fffc;text-align:center;padding-block:28px;font-size:.9rem}
+
+/* floating whatsapp */
+.fab{position:fixed;right:18px;bottom:18px;z-index:30;width:62px;height:62px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 25px #0004;animation:pulse 2.4s infinite}
+.fab svg{width:34px;height:34px}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 #25d36680,0 10px 25px #0004}60%{box-shadow:0 0 0 16px #25d36600,0 10px 25px #0004}}
+@media (prefers-reduced-motion:reduce){.fab{animation:none}html{scroll-behavior:auto}}
+
+dialog{border:0;padding:0;background:transparent;max-width:94vw;max-height:92vh}
+dialog::backdrop{background:#000d}
+dialog img{max-height:88vh;border-radius:14px;margin:auto}
+dialog button{position:fixed;top:14px;right:18px;background:#fff;border:0;border-radius:50%;width:42px;height:42px;font-size:1.4rem;cursor:pointer}
+
+@media (max-width:860px){
+  nav{display:none}
+  .lang{margin-left:auto}
+  .model,.amen-grid,.credit-grid,.contact-grid{grid-template-columns:1fr}
+  .model{padding:18px}
+  .model .ext{aspect-ratio:4/3}
+  .photos{grid-template-columns:repeat(2,1fr)}
+  section{padding-block:56px}
+}
+@media (max-width:420px){.floors{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute"><symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4c-1-1.6-1.5-3.4-1.5-5.2 0-5.4 4.4-9.8 9.8-9.8 2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.2 1.3 15.2 0 12 0 5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.3-1.7c1.7 1 3.7 1.5 5.7 1.5 6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.5-8.3z"/></symbol></svg>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#inicio"><img src="img/logo.png" alt="Alta California Club Residencial" width="120" height="72"></a>
+    <nav>
+      <a href="#video">Video</a>
+      <a href="#modelos" data-en="Homes">Modelos</a>
+      <a href="#amenidades" data-en="Amenities">Amenidades</a>
+      <a href="#credito" data-en="Financing">Crédito</a>
+      <a href="#contacto" data-en="Contact">Contacto</a>
+    </nav>
+    <button class="lang" id="lang" type="button" aria-label="Change language to English">🇺🇸 EN</button>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+  <div class="wrap">
+    <h1><span data-en="Where your dreams">Donde tus sueños</span><span data-en="come true">se hacen realidad</span></h1>
+    <div class="promo">
+      <small data-en="Exclusive promo · Limited time only">Promoción exclusiva por tiempo limitado</small>
+      <strong data-en="Up to $200K MXN discount!">¡Hasta $200 mil de descuento!</strong>
+    </div>
+    <div class="cta">
+      <a class="btn btn-wa wa" href="https://wa.me/523322221912" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-en="Let's chat on WhatsApp">Agenda tu cita por WhatsApp</span></a>
+      <a class="btn btn-ghost" href="#modelos" data-en="See homes">Ver modelos</a>
+    </div>
+  </div>
+  <img class="family" src="img/family.webp" alt="Familia feliz en su nuevo hogar" width="836" height="900">
+</section>
+
+<section class="video" id="video">
+  <div class="wrap video-grid">
+    <div>
+      <div class="eyebrow" data-en="Take the tour">Recorrido</div>
+      <h2 data-en="Get to know <em>Alta California</em>">Conoce <em>Alta California</em></h2>
+      <p data-en="Walk through the homes, the club and the amenities before you visit. Like what you see? Schedule your tour today.">Recorre las casas, el club y las amenidades antes de tu visita. ¿Te gustó? Agenda tu cita hoy mismo.</p>
+      <a class="btn btn-wa wa" href="https://wa.me/523322221912" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-en="Schedule a tour">Agendar una cita</span></a>
+    </div>
+    <video src="video/promo.mp4" poster="img/video-poster.jpg" controls playsinline preload="metadata"></video>
+  </div>
+</section>
+
+<section id="modelos">
+  <div class="wrap">
+    <div class="eyebrow" data-en="Our homes">Nuestros modelos</div>
+    <h2 data-en="Find your <em>new home</em>">Encuentra tu <em>nuevo hogar</em></h2>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div id="model"></div>
+  </div>
+</section>
+
+<section class="amen" id="amenidades">
+  <div class="wrap amen-grid">
+    <div>
+      <div class="eyebrow" data-en="Club lifestyle">Vida de club</div>
+      <h2 data-en="<em>Amenities</em>"><em>Amenidades</em></h2>
+      <ul>
+        <li><i>🏊</i><span data-en="Semi-Olympic pool">Alberca semi-olímpica</span></li>
+        <li><i>⛱️</i><span data-en="Terrace with pool in every section">Terraza con alberca en cada coto</span></li>
+        <li><i>🏀</i><span data-en="Multi-purpose courts">Canchas de usos múltiples</span></li>
+        <li><i>🎾</i><span data-en="New padel court">Nueva cancha de pádel</span></li>
+        <li><i>🌳</i><span data-en="Green areas & central park">Áreas verdes y parque central</span></li>
+        <li><i>🎲</i><span data-en="Game room">Sala de juegos</span></li>
+        <li><i>🛝</i><span data-en="Kids playground">Área de juegos para niños</span></li>
+        <li><i>🏃</i><span data-en="Jogging track">Pista de jogging</span></li>
+        <li><i>💪</i><span data-en="Fully equipped gym">Gimnasio equipado</span></li>
+        <li><i>💻</i><span data-en="Co-working space">Co-working</span></li>
+        <li><i>🛡️</i><span data-en="24/7 security">Seguridad 24/7</span></li>
+      </ul>
+    </div>
+    <div class="photos">
+      <figure><img src="img/alberca.jpg" alt="" loading="lazy"><figcaption data-en="Resort-style pool">Alberca tipo resort</figcaption></figure>
+      <figure><img src="img/terraza.jpg" alt="" loading="lazy"><figcaption data-en="Resort-style terrace">Terraza tipo resort</figcaption></figure>
+      <figure><img src="img/gym.jpg" alt="" loading="lazy"><figcaption data-en="Equipped gym">Gimnasio equipado</figcaption></figure>
+      <figure><img src="img/padel.jpg" alt="" loading="lazy"><figcaption data-en="Padel court">Cancha de pádel</figcaption></figure>
+      <figure><img src="img/coworking.jpg" alt="" loading="lazy"><figcaption>Co-working</figcaption></figure>
+      <figure><img src="img/canchas.jpg" alt="" loading="lazy"><figcaption data-en="Sports courts">Canchas deportivas</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="credit" id="credito">
+  <div class="wrap">
+    <div class="eyebrow" data-en="Financing">Financiamiento</div>
+    <h2 data-en="We handle your <em>credit</em> paperwork">Nosotros tramitamos tu <em>crédito</em></h2>
+    <div class="credit-grid">
+      <div class="card">
+        <h3>FOVISSSTE</h3>
+        <ul>
+          <li data-en="FOVISSSTE Traditional">Fovissste Tradicional</li>
+          <li data-en="FOVISSSTE Joint Credit (spouse)">Fovissste Crédito Conyugal</li>
+          <li data-en="FOVISSSTE For Everyone">Fovissste Para Todos</li>
+        </ul>
+        <p data-en="We can also process <b>INFONAVIT</b> or <b>bank</b> mortgages.">Además, si lo requieres, tramitamos créditos <b>INFONAVIT</b> o <b>bancarios</b>.</p>
+      </div>
+      <div class="card">
+        <h3 data-en="Joint credit">Crédito conyugal</h3>
+        <ul>
+          <li data-en="Combine your credit with your partner or a friend">Junta tu crédito con tu pareja o un amigo</li>
+          <li data-en="Both credits add up so you can buy a house with more benefits">Ambos créditos se suman para comprar una casa con más beneficios</li>
+          <li data-en="Both owners have full protection and life insurance">Ambos dueños cuentan con protección y seguro de vida</li>
+          <li data-en="Lower interest, lower monthly payments">Menos intereses, pagos mensuales más bajos</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hospital">
+      <span data-en="Hospital employee? Don't miss your special discounts!">¿Eres empleado del Hospital? No te pierdas tus descuentos especiales!</span>
+      <a class="btn btn-wa wa" href="https://wa.me/523322221912" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-en="Ask now">Pregunta ya</span></a>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow" data-en="Visit us">¡Visítanos!</div>
+      <h2 data-en="Start building your <em>future now!</em>">Empieza a construir tu <em>futuro ahora</em></h2>
+      <p>Alta California Club Residencial · López Mateos Sur #1201</p>
+      <a class="map" href="https://maps.app.goo.gl/8Cma6Uxa4QKsZrA59" target="_blank" rel="noopener"><img src="img/mapa.jpg" alt="Mapa de ubicación" loading="lazy"></a>
+    </div>
+    <div class="agent">
+      <div class="eyebrow" data-en="Your sales advisor">Tu asesor</div>
+      <h3>Sergio García</h3>
+      <p>📞 <a href="tel:+523322221912">+52 33 2222-1912</a></p>
+      <p>✉️ <a href="mailto:sergio.garcia@alta-california.mx">sergio.garcia@alta-california.mx</a></p>
+      <a class="btn btn-wa wa" href="https://wa.me/523322221912" target="_blank" rel="noopener"><svg><use href="#wa"/></svg><span data-en="Schedule a tour">Agendar una cita</span></a>
+      <a class="btn" style="border:2px solid var(--navy);color:var(--navy)" href="https://maps.app.goo.gl/8Cma6Uxa4QKsZrA59" target="_blank" rel="noopener" data-en="📍 Open in Google Maps">📍 Abrir en Google Maps</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><span data-en="Limited-time promotion, subject to availability.">Promoción por tiempo limitado, sujeta a disponibilidad.</span> © Alta California Club Residencial</footer>
+
+<a class="fab wa" href="https://wa.me/523322221912" target="_blank" rel="noopener" aria-label="WhatsApp"><svg style="color:#fff"><use href="#wa"/></svg></a>
+
+<dialog id="lb"><button type="button" onclick="lb.close()" aria-label="Cerrar">✕</button><img alt=""></dialog>
+
+<script>
+const PHONE = "523322221912";
+const MSG = {
+  es: m => `Hola, quiero más información de las casas en Alta California${m ? " (modelo " + m + ")" : ""}`,
+  en: m => `Hi, I'd like more information about the homes at Alta California${m ? " (" + m + " model)" : ""}`
+};
+const T = { // model labels
+  es: {lot:"Lote", build:"Construcción", ground:"Planta baja", upper:"Planta alta", ask:"Preguntar por"},
+  en: {lot:"Lot", build:"Built", ground:"Ground floor", upper:"Upper floor", ask:"Ask about"}
+};
+const MODELS = [
+  {name:"Santa Clara", key:"clara", lot:"5×15 m (75 m²)", build:"78 m²", pics:2,
+   ground:{es:["Estacionamiento 1 auto","Sala","Comedor","Cocina","Medio baño","Patio"], en:["Parking for 1 car","Living room","Dining room","Kitchen","Half bath","Patio"]},
+   upper:{es:["2 recámaras","1 baño completo"], en:["2 bedrooms","1 full bathroom"]}},
+  {name:"Santa Lucía", key:"lucia", lot:"5×15 m (75 m²)", build:"78 m²", pics:2,
+   ground:{es:["Estacionamiento 1 auto","Sala","Comedor","Cocina","Baño","1 recámara","Patio"], en:["Parking for 1 car","Living room","Dining room","Kitchen","Bathroom","1 bedroom","Patio"]},
+   upper:{es:["2 recámaras","1 baño completo"], en:["2 bedrooms","1 full bathroom"]}},
+  {name:"Santa Teresa", key:"teresa", lot:"5×15 m (75 m²)", build:"101.87 m²", pics:4,
+   ground:{es:["Estacionamiento 1 auto","Sala","Comedor","Cocina","Baño","1 recámara","Patio"], en:["Parking for 1 car","Living room","Dining room","Kitchen","Bathroom","1 bedroom","Patio"]},
+   upper:{es:["2 recámaras","2 baños completos","Recámara principal con baño"], en:["2 bedrooms","2 full bathrooms","Main bedroom with en-suite bath"]}},
+  {name:"Santa Bárbara", key:"barbara", lot:"6×15 m (90 m²)", build:"122 m²", pics:3,
+   ground:{es:["Garage 2 autos","Sala","Comedor","Cocina","1 baño","Cuarto de lavado"], en:["2-car garage","Living room","Dining room","Kitchen","1 bathroom","Laundry room"]},
+   upper:{es:["2 recámaras","1 baño completo","Recámara principal con baño y vestidor"], en:["2 bedrooms","1 full bathroom","Main bedroom with bath & walk-in closet"]}}
+];
+
+let lang = "es", current = 0;
+try { lang = localStorage.getItem("lang") || (navigator.language.startsWith("es") ? "es" : "en"); } catch (e) {}
+
+const wa = m => `https://wa.me/${PHONE}?text=${encodeURIComponent(MSG[lang](m))}`;
+const li = a => a.map(x => `<li>${x}</li>`).join("");
+
+function renderModel() {
+  const m = MODELS[current], t = T[lang];
+  document.getElementById("tabs").innerHTML = MODELS.map((x, i) =>
+    `<button role="tab" aria-selected="${i === current}" onclick="current=${i};renderModel()">${x.name}</button>`).join("");
+  const pics = Array.from({length: m.pics}, (_, i) => `<img src="img/${m.key}-${i + 1}.jpg" alt="${m.name}" loading="lazy">`).join("");
+  document.getElementById("model").innerHTML = `
+    <article class="model">
+      <img class="ext" src="img/${m.key}-ext.jpg" alt="${m.name}">
+      <div>
+        <h3>${m.name}</h3>
+        <div class="chips"><span class="chip"><b>${t.lot}</b> ${m.lot}</span><span class="chip"><b>${t.build}</b> ${m.build}</span></div>
+        <div class="floors">
+          <div><h4>${t.ground}</h4><ul>${li(m.ground[lang])}</ul></div>
+          <div><h4>${t.upper}</h4><ul>${li(m.upper[lang])}</ul></div>
+        </div>
+        <div class="thumbs"><img class="plan" src="img/${m.key}-plan.jpg" alt="Plano ${m.name}">${pics}</div>
+        <a class="btn btn-wa" href="${wa(m.name)}" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>${t.ask} ${m.name}</a>
+      </div>
+    </article>`;
+}
+
+function applyLang() {
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-en]").forEach(el => {
+    if (el.dataset.es === undefined) el.dataset.es = el.innerHTML; // ponytail: Spanish lives in the HTML, English in data-en
+    el.innerHTML = lang === "en" ? el.dataset.en : el.dataset.es;
+  });
+  document.querySelectorAll("a.wa").forEach(a => a.href = wa());
+  const b = document.getElementById("lang");
+  b.textContent = lang === "es" ? "🇺🇸 EN" : "🇲🇽 ES";
+  b.setAttribute("aria-label", lang === "es" ? "Change language to English" : "Cambiar idioma a español");
+  renderModel();
+}
+
+document.getElementById("lang").onclick = () => {
+  lang = lang === "es" ? "en" : "es";
+  try { localStorage.setItem("lang", lang); } catch (e) {}
+  applyLang();
+};
+
+// lightbox for any photo click
+document.addEventListener("click", e => {
+  const img = e.target.closest(".model .ext, .thumbs img, .photos img");
+  if (!img) return;
+  lb.querySelector("img").src = img.src;
+  lb.showModal();
+});
+lb.addEventListener("click", e => { if (e.target === lb) lb.close(); });
+
+applyLang();
+</script>
+</body>
+</html>
