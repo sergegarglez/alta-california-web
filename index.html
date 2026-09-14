@@ -105,6 +105,15 @@ nav a:hover{color:var(--gold)}
 .card{background:#ffffff12;border:1px solid #ffffff26;border-radius:var(--r);padding:28px}
 .card h3{margin:0 0 10px;color:var(--gold-l)}
 .card ul{margin:0;padding-left:1.1em}
+.infonavit{margin-top:28px}
+.inf-head{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.inf-head h3{margin:0}
+.inf-head img{width:96px;height:auto;background:#fff;border-radius:14px;padding:10px}
+.inf-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.inf-grid>div{background:#ffffff0f;border-radius:16px;padding:18px}
+.inf-grid h4{margin:0 0 6px;color:#fff;font-size:1.1rem}
+.inf-grid p{margin:0;color:#ffffffd0;font-size:.95rem}
+.inf-grid .tag{margin-top:10px;color:var(--gold-l);font-weight:500}
 .hospital{margin-top:28px;background:var(--gold);color:var(--navy-d);border-radius:var(--r);padding:22px 28px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;font-size:1.2rem;font-weight:700}
 
 /* location + contact */
@@ -246,6 +255,31 @@ dialog button{position:fixed;top:14px;right:18px;background:#fff;border:0;border
           <li data-en="Both owners have full protection and life insurance">Ambos dueños cuentan con protección y seguro de vida</li>
           <li data-en="Lower interest, lower monthly payments">Menos intereses, pagos mensuales más bajos</li>
         </ul>
+      </div>
+    </div>
+    <div class="card infonavit">
+      <div class="inf-head">
+        <img src="img/infonavit.png" alt="Infonavit" width="96" height="70">
+        <h3 data-en="Infonavit credit options">Créditos Infonavit</h3>
+      </div>
+      <div class="inf-grid">
+        <div>
+          <h4>Infonavit Total</h4>
+          <p data-en="Financing granted by Infonavit together with a financial institution to reach a higher maximum loan amount.">Financiamiento otorgado por el Infonavit en coparticipación con una entidad financiera para alcanzar un monto máximo de préstamo más alto.</p>
+        </div>
+        <div>
+          <h4>Cofinavit</h4>
+          <p data-en="Combined credit: Infonavit lends you one part and a bank or sofol the rest, so you can buy a higher-value home.">Crédito combinado donde el Infonavit te otorga una parte y un banco/sofol la otra, permitiéndote comprar casas de mayor valor.</p>
+        </div>
+        <div>
+          <h4 data-en="Unamos Crédito (Joint Credit)">Unamos Crédito</h4>
+          <p data-en="Combine your Infonavit credit with another person's without being married (both payment capacities add up).">Esquema que te permite juntar tu crédito Infonavit con el de otra persona sin necesidad de estar casados (suma las capacidades de pago).</p>
+          <p class="tag" data-en="Common-law couples, friends, siblings, or parents and children.">Parejas en concubinato, amigos, hermanos o padres e hijos.</p>
+        </div>
+        <div>
+          <h4 data-en="Cofinavit Additional Income">Cofinavit Ingresos Adicionales</h4>
+          <p data-en="A Cofinavit option that lets you prove extra income to the bank (tips, commissions) to increase the final amount.">Variante del Cofinavit que te permite comprobar ante el banco ingresos extra (propinas, comisiones) para incrementar el monto final.</p>
+        </div>
       </div>
     </div>
     <div class="hospital">
